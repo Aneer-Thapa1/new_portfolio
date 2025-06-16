@@ -1,17 +1,12 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
+import React from "react";
+import Navbar from "./sections/Navbar";
 
-function App() {
-  const [count, setCount] = useState(0);
-
+const App = () => {
   return (
-    <>
-      <div className="absolute z-50"></div>
-      Hellos
-    </>
+    <div className="container mx-auto max-w-7xl">
+      <Navbar />
+    </div>
   );
-}
+};
 
 export default App;
